@@ -4,9 +4,9 @@ import pandas as pd
 
 def send_request(data: pd.DataFrame) -> pd.DataFrame:
     """
-
-    :param data:
-    :return:
+    Function sends a request to remote server with model to assess the quality of ATM placement
+    :param data: Prepared DataFrame with features based on object geolocation
+    :return: DataFrame with ids and popularity indexes of the place
     """
     data = data.set_index("id")
 
